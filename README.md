@@ -129,12 +129,35 @@ The system is currently in a proof-of-concept stage with:
 - Parallel execution of semantic and structured searches
 - Active development and experimentation ongoing
 
-## 📊 Visualization
 
-Currently supports:
-- Structured query results viewing in Neo4j browser
-- Semantic search results through Qdrant interface
-- Basic web UI for query input and results display
+## 📸 Screenshots
+
+### Main Interface
+The Unified Doubles Search Assistant — free-form query input with example queries, debug mode, and bilingual support.
+![Main UI](docs/main-ui.jpg)
+
+### System Architecture
+![Architecture](docs/architecture.jpg)
+
+### Neo4j Knowledge Graph
+Doubles linked to their products — the graph structure enables relationship-aware retrieval.
+![Neo4j Graph](docs/neo4j-graph.jpg)
+
+### Natural Language → Structured Query
+LLaMA parses free-form text into keywords, logical filters, and a semantic search query.
+![Parsed Query](docs/parsed-query.jpg)
+
+### Semantic Search Results
+Qdrant returns ranked matches with relevance scores.
+![Semantic Results](docs/semantic-results.jpg)
+
+### Vector Database (Qdrant)
+Bilingual collections — 1,801 doubles each in English and German.
+![Qdrant Collections](docs/qdrant-collections.jpg)
+
+### Structured Queries (Neo4j)
+Cypher queries for precise demographic and product filtering.
+![Neo4j Browser](docs/neo4j-browser.jpg)
 
 
 ## 👥 Contributor
