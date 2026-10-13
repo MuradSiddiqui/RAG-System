@@ -2,6 +2,24 @@
 
 A Retrieval-Augmented Generation (RAG) system that combines semantic search and structured queries to find and match doubles based on various criteria. The system integrates Neo4j for graph database operations and Qdrant for vector similarity search.
 
+
+## 🏗️ System Architecture
+
+![RAG System Architecture](docs/architecture.png)
+
+**Query flow:**
+1. **Free-form text** → LLaMA (via Groq API) parses into structured JSON with logical filters + semantic search text
+2. **Query Router** splits into two parallel paths:
+   - **Neo4j path**: Cypher queries for structured/demographic filters (age, income, property, investments)
+   - **Qdrant path**: Vector similarity search with BM25 ranking, spaCy NLP, and Sentence Transformers embeddings
+3. **Result Aggregator** merges structured + semantic results into a unified response
+
+**Key design decisions:**
+- Bilingual (EN/DE) with separate Qdrant collections and automatic language detection
+- Doubles linked to Products (Property, Investment, BankAccount, Pension) in Neo4j graph
+- Negation handling via spaCy NLP injection for accurate semantic matching
+
+
 ## 🌟 Features
 
 - **Doubles Management**
