@@ -5,7 +5,7 @@ A Retrieval-Augmented Generation (RAG) system that combines semantic search and 
 
 ## 🏗️ System Architecture
 
-![RAG System Architecture](docs/architecture.png)
+![RAG System Architecture](docs/architecture.jpg)
 
 **Query flow:**
 1. **Free-form text** → LLaMA (via Groq API) parses into structured JSON with logical filters + semantic search text
