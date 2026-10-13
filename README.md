@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RAG System for Double Matching
 
 A Retrieval-Augmented Generation (RAG) system that combines semantic search and structured queries to find and match doubles based on various criteria. The system integrates Neo4j for graph database operations and Qdrant for vector similarity search.
@@ -127,6 +126,3 @@ Currently supports:
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. 
-=======
-# RAG-System
->>>>>>> 90c4c2625d7657fdc39958fa29fb5665f6f87d86
